@@ -1,0 +1,166 @@
+body {
+    margin: 0;
+    font-family: Arial, sans-serif;
+    background: #f5f6fa;
+}
+
+/* LAYOUT */
+.layout {
+    display: flex;
+}
+
+/* SIDEBAR */
+.sidebar {
+    width: 220px;
+    height: 100vh;
+    background: #2f3640;
+    color: white;
+    padding: 20px;
+}
+
+.sidebar h2 {
+    margin-bottom: 20px;
+}
+
+.sidebar ul {
+    list-style: none;
+    padding: 0;
+}
+
+.sidebar ul li {
+    margin-bottom: 10px;
+}
+
+.sidebar ul li a {
+    color: white;
+    text-decoration: none;
+    display: block;
+    padding: 8px;
+    border-radius: 5px;
+}
+
+.sidebar ul li a:hover {
+    background: #40739e;
+}
+
+/* MAIN */
+.main {
+    flex: 1;
+}
+
+/* NAVBAR */
+.navbar {
+    background: white;
+    padding: 15px 20px;
+    display: flex;
+    justify-content: space-between;
+    border-bottom: 1px solid #ddd;
+}
+
+/* CONTENT */
+.content {
+    padding: 20px;
+}
+
+/* CARD */
+.card {
+    background: white;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.08);
+}
+
+.auth-card {
+    @apply bg-white/10 backdrop-blur-lg border border-white/20 shadow-xl rounded-2xl p-6 sm:p-8;
+}
+
+.auth-title {
+    @apply text-2xl sm:text-3xl font-bold text-white;
+}
+
+.input-field {
+    @apply w-full px-4 py-3 sm:py-2 rounded-lg bg-white/20 text-white border border-white/30 focus:outline-none focus:ring-2 focus:ring-blue-500;
+}
+
+/* FORM */
+.form-inline {
+    display: flex;
+    gap: 10px;
+    flex-wrap: wrap;
+    margin-bottom: 20px;
+}
+
+.form-inline input {
+    padding: 10px;
+    border: 1px solid #ddd;
+    border-radius: 6px;
+}
+
+/* BUTTON */
+button {
+    background: #0984e3;
+    color: white;
+    border: none;
+    padding: 10px 15px;
+    border-radius: 6px;
+    cursor: pointer;
+}
+
+button:hover {
+    background: #74b9ff;
+}
+
+.btn-danger {
+    background: #d63031;
+}
+
+.btn-danger:hover {
+    background: #ff7675;
+}
+
+.btn-edit {
+    background: #00b894;
+    color: white;
+    padding: 6px 10px;
+    border-radius: 5px;
+    text-decoration: none;
+    margin-right: 5px;
+}
+
+.btn-edit:hover {
+    background: #55efc4;
+}
+
+.btn-primary {
+    @apply w-full bg-blue-600 hover:bg-blue-700 text-white py-3 sm:py-2 rounded-lg font-semibold transition;
+}
+
+/* TABLE */
+table {
+    width: 100%;
+    border-collapse: collapse;
+}
+
+th {
+    background: #f1f2f6;
+    text-align: left;
+    font-size: 14px;
+}
+
+th,
+td {
+    padding: 12px;
+    border-bottom: 1px solid #eee;
+}
+
+tr:hover {
+    background: #f8f9fa;
+}
+
+/* ALERT */
+.alert-success {
+    background: #dff9fb;
+    padding: 10px;
+    border-radius: 5px;
+    margin-bottom: 10px;
+}

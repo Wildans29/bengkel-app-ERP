@@ -1,0 +1,136 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+/* =========================
+   AUTH (LOGIN)
+========================= */
+
+.auth-body {
+    @apply bg-gradient-to-br from-gray-900 via-gray-800 to-gray-900 min-h-screen flex items-center justify-center;
+}
+
+.auth-container {
+    @apply w-full max-w-md;
+}
+
+.auth-card {
+    @apply bg-white/10 backdrop-blur-lg border border-white/20 shadow-xl rounded-2xl p-8;
+}
+
+.auth-title {
+    @apply text-3xl font-bold text-white;
+}
+
+.auth-subtitle {
+    @apply text-gray-300 text-sm;
+}
+
+.form-group {
+    @apply space-y-1;
+}
+
+.form-label {
+    @apply text-gray-300 text-sm;
+}
+
+.auth-footer {
+    @apply text-center text-gray-400 text-xs mt-6;
+}
+
+/* AUTH INPUT */
+.input-auth {
+    @apply w-full px-4 py-2 rounded-lg
+           bg-white/20 text-white placeholder-gray-300
+           border border-white/30
+           focus:outline-none focus:ring-2 focus:ring-blue-500;
+}
+
+.btn-auth {
+    @apply w-full bg-blue-600 hover:bg-blue-700
+           text-white py-2 rounded-lg font-semibold
+           transition;
+}
+
+/* =========================
+   SIDEBAR
+========================= */
+
+.sidebar-link {
+    @apply flex items-center gap-3 px-3 py-2 rounded-lg
+           text-gray-300 hover:bg-white/10
+           transition duration-200;
+}
+
+.sidebar-link i {
+    @apply text-lg min-w-[20px];
+}
+
+.sidebar-link.active {
+    @apply bg-blue-600 text-white shadow;
+}
+
+/* =========================
+   CARD
+========================= */
+
+.card {
+    @apply bg-white dark:bg-gray-800
+           text-gray-800 dark:text-white
+           p-5 rounded-xl shadow-sm
+           border border-gray-200 dark:border-gray-700
+           transition duration-200 hover:shadow-md hover:-translate-y-0.5;
+}
+
+/* =========================
+   FORM
+========================= */
+
+.input-field {
+    @apply px-3 py-2 rounded-lg
+           border border-gray-300 dark:border-gray-700
+           bg-white dark:bg-gray-800
+           text-gray-800 dark:text-white
+           placeholder-gray-400
+           focus:outline-none focus:ring-2 focus:ring-blue-500
+           transition;
+}
+
+.input-field:focus {
+    @apply ring-2 ring-blue-500;
+}
+
+/* =========================
+   BUTTON
+========================= */
+
+.btn-primary {
+    @apply bg-blue-600 hover:bg-blue-700
+           px-4 py-2 rounded-lg text-white
+           shadow-sm hover:shadow-md
+           transition;
+}
+
+/* =========================
+   TABLE
+========================= */
+
+.table {
+    @apply w-full text-sm text-gray-700 dark:text-gray-200;
+}
+
+.table thead {
+    @apply bg-gray-50 dark:bg-gray-700
+           text-gray-500 dark:text-gray-300
+           border-b border-gray-200 dark:border-gray-700;
+}
+
+.table tbody tr {
+    @apply border-b border-gray-100 dark:border-gray-800
+           hover:bg-gray-50 dark:hover:bg-white/5
+           transition;
+}
+
+.table tbody tr:hover {
+    @apply bg-gray-50 dark:bg-white/5;
+}
