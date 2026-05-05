@@ -9,8 +9,8 @@ use App\Http\Controllers\InvoiceController;
 use App\Http\Controllers\BillController;
 use App\Http\Controllers\DashboardController;
 
-Route::get('/', function () {
-    return redirect()->route('login');
+Route::get('/test', function () {
+    return response()->json(['status' => 'ok', 'time' => now()]);
 });
 
 Route::middleware('auth')->group(function () {
