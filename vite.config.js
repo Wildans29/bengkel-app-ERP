@@ -9,10 +9,7 @@ export default defineConfig({
         }),
     ],
     build: {
-        manifest: true,
+        manifest: "manifest.json", // 🔥 WAJIB STRING
         outDir: "public/build",
-        rollupOptions: {
-            input: ["resources/css/app.css", "resources/js/app.js"],
-        },
     },
 });
