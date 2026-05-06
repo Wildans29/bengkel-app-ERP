@@ -37,4 +37,13 @@ Route::middleware('auth')->group(function () {
     ->name('bills.print');
 });
 
+// Temporary seed route - HAPUS setelah selesai!
+Route::get('/seed-demo/{key}', function ($key) {
+    if ($key !== 'bengkel123') {
+        abort(403);
+    }
+    \Illuminate\Support\Facades\Artisan::call('db:seed --class=Database\\Seeders\\DemoSeeder');
+    return 'Seeding done! 10 customers + 15 items + transactions created.';
+});
+
 require __DIR__.'/auth.php';
